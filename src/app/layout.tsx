@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Comfortaa } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
+import ScrollTop from "@/components/ScrollTop";
 
 const comfortaa = Comfortaa({
   variable: "--font-comfortaa",
@@ -31,6 +32,7 @@ export default function RootLayout({
       >
         {children}
         <Toaster />
+        <ScrollTop />
       </body>
     </html>
   );

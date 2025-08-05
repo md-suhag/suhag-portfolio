@@ -14,7 +14,7 @@ const navMenu = [
   { name: "Home", href: "#" },
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
-  { name: "Service", href: "#service" },
+  // { name: "Service", href: "#service" },
   { name: "Project", href: "#project" },
   { name: "Contact", href: "#contact" },
 ];
