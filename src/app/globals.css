@@ -135,7 +135,9 @@
     @apply bg-background text-foreground font-sans;
   }
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .social-icon a {
   color: #0984e3;
   border: 2px solid #0984e3;

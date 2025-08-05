@@ -1,3 +1,4 @@
+import About from "@/components/home/About";
 import Hero from "@/components/home/Hero";
 import { Particles } from "@/components/magicui/particles";
 import Navbar from "@/components/shared/Navbar";
@@ -16,6 +17,7 @@ export default function Home() {
       </header>
       <main>
         <Hero />
+        <About />
       </main>
       <footer></footer>
     </div>
