@@ -1,4 +1,5 @@
 import About from "@/components/home/About";
+import Contact from "@/components/home/Contact";
 import Hero from "@/components/home/Hero";
 import Skill from "@/components/home/Skill";
 import { Particles } from "@/components/magicui/particles";
@@ -20,6 +21,7 @@ export default function Home() {
         <Hero />
         <About />
         <Skill />
+        <Contact />
       </main>
       <footer></footer>
     </div>

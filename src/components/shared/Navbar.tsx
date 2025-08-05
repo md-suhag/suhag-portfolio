@@ -24,7 +24,7 @@ const Navbar = () => {
     <nav className=" flex justify-between items-center  p-2 py-5">
       <div>
         <Link href="/">
-          <h2 className=" text-2xl font-black text-primary">SUHAG</h2>
+          <h2 className=" text-2xl font-black text-primary ">SUHAG</h2>
         </Link>
       </div>
       <div className="hidden md:flex gap-8">

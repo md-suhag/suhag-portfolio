@@ -21,13 +21,13 @@ const About = () => {
           <Tabs defaultValue="overview">
             <TabsList>
               <TabsTrigger
-                className="px-4 py-2 mr-3 mb-3 data-[state=active]:border-primary/70 data-[state=active]:border-b-1 rounded-md  hover:cursor-pointer  data-[state=active]:bg-primary/30"
+                className="px-4 py-2 mr-3 mb-3 data-[state=active]:border-primary/70 data-[state=active]:border-l-1 rounded-md  hover:cursor-pointer  data-[state=active]:bg-primary/30"
                 value="overview"
               >
                 Overview
               </TabsTrigger>
               <TabsTrigger
-                className="px-4 py-2  data-[state=active]:border-primary/70 data-[state=active]:border-b-1 rounded-md hover:cursor-pointer data-[state=active]:bg-primary/30"
+                className="px-4 py-2  data-[state=active]:border-primary/70 data-[state=active]:border-l-1 rounded-md hover:cursor-pointer data-[state=active]:bg-primary/30"
                 value="education"
               >
                 Education
@@ -55,19 +55,35 @@ const About = () => {
               </p>
             </TabsContent>
             <TabsContent value="education">
-              <div className="my-5">
-                <h4 className="text-xl">Diploma in Computer Technoloy</h4>
-                <p className="text-muted-foreground text-base">
-                  Habiganj polytechnic institute - <span>( 2020-2024 )</span>
-                </p>
-                <p className="text-muted-foreground">Cgpa : 3.90 out of 4.00</p>
-              </div>
-              <div className="my-5">
-                <h4 className="text-xl">SSC - ( science )</h4>
-                <p className="text-muted-foreground text-base">
-                  Shaistaganj High School - <span>( 2018-2019 )</span>
-                </p>
-                <p className="text-muted-foreground">Gpa : 4.78 out of 5.00</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <div className="my-5 text-sm sm:text-base">
+                  <h4 className="text-lg mb-2">Diploma in Engineering</h4>
+                  <p className="text-muted-foreground">
+                    Habiganj Polytechnic Institute
+                  </p>
+                  <p className="text-muted-foreground">
+                    Computer Technology - <span>( 2020-2024 )</span>
+                  </p>
+
+                  <p className="text-muted-foreground">
+                    Cgpa : 3.90 out of 4.00
+                  </p>
+                </div>
+                <div className="my-5  text-sm sm:text-base">
+                  <h4 className="text-lg mb-2">
+                    Secondary School Cirtificate (SSC)
+                  </h4>
+                  <p className="text-muted-foreground">
+                    Shaistaganj High School
+                  </p>
+                  <p className="text-muted-foreground">
+                    Science - <span>( 2018-2019 )</span>
+                  </p>
+
+                  <p className="text-muted-foreground">
+                    Gpa : 4.78 out of 5.00
+                  </p>
+                </div>
               </div>
             </TabsContent>
           </Tabs>
