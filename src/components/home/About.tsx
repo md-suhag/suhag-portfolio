@@ -4,19 +4,20 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="about" className="min-h-[500px]">
+    <section id="about" className="">
       <h2 className="text-center font-extrabold text-4xl my-16">About</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2  gap-10 md:gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3   gap-10 md:gap-4">
         <div className="mx-auto">
           <Image
+            className="w-50 md:w-[300px]"
             src="./developer.svg"
             width="300"
             height="300"
             alt="developer"
           />
         </div>
-        <div className="">
+        <div className="col-span-2">
           <Tabs defaultValue="overview">
             <TabsList>
               <TabsTrigger

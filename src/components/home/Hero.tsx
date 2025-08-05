@@ -6,8 +6,8 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 min-h-[500px]  items-center space-x-5 gap-6 md:gap-0 ">
-      <div className="py-4 order-2 md:order-1">
+    <section className="grid grid-cols-1 md:grid-cols-3 min-h-[500px]  items-center space-x-5 gap-6 md:gap-0 ">
+      <div className="py-4 order-2 md:order-1 col-span-2">
         <span className="italic font-serif text-muted-foreground">
           {" "}
           Hi I&apos;m
@@ -18,9 +18,9 @@ const Hero = () => {
         <h2 className="text-xl sm:text-2xl lg:text-3xl font-normal mb-4  text-primary ">
           Full Stack Web Developer
         </h2>
-        <p className="text-muted-foreground">
+        <p className="text-muted-foreground md:max-w-[600px]">
           Professional web developer and designer who provides best quantity
-          service
+          service.
         </p>
         <Link href="#contact" className="mt-6  btn">
           Contact Me
@@ -41,7 +41,9 @@ const Hero = () => {
       </div>
       <div className="order-1 md:order-2">
         <Image
-          className="m-auto   w-50 md:w-[300px]"
+          className="m-auto max-w-full  w-50 md:w-[300px]"
+          placeholder="blur"
+          blurDataURL="./suhag.png"
           src="/suhag.png"
           alt="suhag"
           width={"300"}
