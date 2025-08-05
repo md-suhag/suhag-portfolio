@@ -1,0 +1,34 @@
+import React from "react";
+
+const techStacks = [
+  "Javascript",
+  "Typescript",
+  "React.js",
+  "Redux",
+  "Next.js",
+  "Node.js",
+  "Express.js",
+  "MongoDB",
+  "PostgreSql",
+  "Prisma",
+  "Shadcn",
+  "Frammer motion",
+  "Figma",
+];
+const Skill = () => {
+  return (
+    <section id="skill">
+      <h2 className="text-center font-extrabold text-4xl my-16">Skill</h2>
+
+      <div className="max-w-[700px] mx-auto my-5 flex justify-center flex-wrap">
+        {techStacks.map((item, i) => (
+          <span key={i} className="skill-icon">
+            {item}
+          </span>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Skill;

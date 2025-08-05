@@ -7,7 +7,7 @@ const About = () => {
     <section id="about" className="min-h-[500px]">
       <h2 className="text-center font-extrabold text-4xl my-16">About</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2  gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2  gap-10 md:gap-4">
         <div className="mx-auto">
           <Image
             src="./developer.svg"
@@ -20,13 +20,13 @@ const About = () => {
           <Tabs defaultValue="overview">
             <TabsList>
               <TabsTrigger
-                className="px-4 py-2 mr-3 mb-3 data-[state=active]:border-primary/70 data-[state=active]:border-2 rounded-md  hover:cursor-pointer  data-[state=active]:bg-primary/10"
+                className="px-4 py-2 mr-3 mb-3 data-[state=active]:border-primary/70 data-[state=active]:border-b-1 rounded-md  hover:cursor-pointer  data-[state=active]:bg-primary/30"
                 value="overview"
               >
                 Overview
               </TabsTrigger>
               <TabsTrigger
-                className="px-4 py-2  data-[state=active]:border-primary/70 data-[state=active]:border-2 rounded-md hover:cursor-pointer data-[state=active]:bg-primary/10"
+                className="px-4 py-2  data-[state=active]:border-primary/70 data-[state=active]:border-b-1 rounded-md hover:cursor-pointer data-[state=active]:bg-primary/30"
                 value="education"
               >
                 Education

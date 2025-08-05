@@ -135,13 +135,15 @@
     @apply bg-background text-foreground font-sans;
   }
 }
+
 html {
   scroll-behavior: smooth;
 }
 .social-icon a {
   color: #0984e3;
-  border: 2px solid #0984e3;
+  border: 1px solid #0984e3;
   padding: 8px;
+  background-color: #0985e30a;
 
   display: inline-block;
   border-radius: 50%;
@@ -159,4 +161,11 @@ html {
 ::-webkit-scrollbar-thumb {
   background-color: #0984e3;
   border-radius: 20px;
+}
+
+.skill-icon {
+  @apply border-1 border-primary/70 p-2 my-2 mx-1 rounded-lg bg-primary/10 hover:bg-primary/20 cursor-pointer transition-colors duration-300;
+}
+.btn {
+  @apply inline-block px-4 py-2 border-primary/70 border-b-1 rounded-md cursor-pointer bg-primary/30 hover:bg-primary/40;
 }

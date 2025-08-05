@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../ui/button";
 import { FacebookIcon, GithubIcon, LinkedinIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -18,10 +19,12 @@ const Hero = () => {
           Full Stack Web Developer
         </h2>
         <p className="text-muted-foreground">
-          Professional web developer and designer working with high level
-          experienced.
+          Professional web developer and designer who provides best quantity
+          service
         </p>
-        <Button className="mt-6">Contact Me</Button>
+        <Link href="#contact" className="mt-6  btn">
+          Contact Me
+        </Link>
         <div className="flex gap-4 mt-3 social-icon">
           <a target="_blank" href="https://www.facebook.com/mdas.suhag">
             <FacebookIcon size={15} />
