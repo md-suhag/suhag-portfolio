@@ -3,6 +3,7 @@ import Contact from "@/components/home/Contact";
 import Hero from "@/components/home/Hero";
 import Skill from "@/components/home/Skill";
 import { Particles } from "@/components/magicui/particles";
+import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/shared/Navbar";
 
 export default function Home() {
@@ -23,7 +24,7 @@ export default function Home() {
         <Skill />
         <Contact />
       </main>
-      <footer></footer>
+      <Footer />
     </div>
   );
 }
