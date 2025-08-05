@@ -16,6 +16,8 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "./ui/textarea";
+import { toast } from "sonner";
+import { Loader } from "lucide-react";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -37,8 +39,19 @@ const ContactForm = () => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      body: JSON.stringify(values),
+      headers: { "Content-Type": "application/json" },
+    });
+
+    if (res.ok) {
+      form.reset();
+      toast.success("Message Sent successfully");
+    } else {
+      toast.error("Something went wrong");
+    }
   }
   return (
     <Form {...form}>
@@ -104,8 +117,18 @@ const ContactForm = () => {
           )}
         />
 
-        <Button className="btn" type="submit">
-          Send Message
+        <Button
+          disabled={form.formState.isSubmitting}
+          className="btn"
+          type="submit"
+        >
+          {form.formState.isSubmitting ? (
+            <div className="flex items-center gap-2">
+              <Loader className="animate-spin w-4 h-4" /> Sending...
+            </div>
+          ) : (
+            "Send Message"
+          )}
         </Button>
       </form>
     </Form>
