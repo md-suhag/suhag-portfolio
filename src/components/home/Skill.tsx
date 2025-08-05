@@ -16,7 +16,7 @@ const techStacks = [
 const Skill = () => {
   return (
     <section id="skills">
-      <h2 className="text-center font-extrabold text-4xl my-16">Skill</h2>
+      <h2 className="text-center font-extrabold text-4xl my-16">Skills</h2>
 
       <div className="max-w-[700px] mx-auto my-5 flex justify-center flex-wrap">
         {techStacks.map((item, i) => (
