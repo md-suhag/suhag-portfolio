@@ -55,10 +55,13 @@ const Hero = () => {
         className="order-1 md:order-2"
       >
         <Image
-          className="m-auto max-w-full  w-50 md:w-[300px]"
           src={images.heroImg}
-          priority
           alt="suhag"
+          width={300}
+          height={300}
+          priority
+          sizes="(max-width: 768px) 200px, 300px"
+          className="m-auto w-[200px] h-auto md:w-[300px] "
         />
       </motion.div>
     </section>
