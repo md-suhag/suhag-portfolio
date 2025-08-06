@@ -1,6 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@radix-ui/react-tabs";
 import Image from "next/image";
 import React from "react";
+import { images } from "../../../public/images";
 
 const About = () => {
   return (
@@ -11,9 +12,7 @@ const About = () => {
         <div className="mx-auto">
           <Image
             className="w-50 md:w-[300px]"
-            src="./developer.svg"
-            width="300"
-            height="300"
+            src={images.developer}
             alt="developer"
           />
         </div>

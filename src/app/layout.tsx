@@ -11,12 +11,15 @@ const comfortaa = Comfortaa({
 
 export const metadata: Metadata = {
   title: "Md Abdus Salam Suhag | Web developer",
-  description: "portfolio of md abdus salam suhag - full stck web developer",
+  description:
+    "Portfolio of Md Abdus Salam Suhag - full stack web developer. Javascript, Typescript, React js, Next js, Node js, Express js, Mongodb, postgreSql. suhag, md suhag, abdus salam ",
   openGraph: {
     title: "Md Abdus Salam Suhag | Web developer",
     description:
-      "portfolio of md abdus salam suhag - full stck web developer. tech stack: typescript, react.js, next.js , node.js, express.js, mongodb , postgreSql ",
+      "Portfolio of Md Abdus Salam Suhag - full stack web developer. Javascript, Typescript, React js, Next js, Node js, Express js, Mongodb, postgreSql.",
     type: "website",
+    siteName: "Porfolio of Suhag",
+    url: "https://mdsuhag.vercel.app",
   },
 };
 

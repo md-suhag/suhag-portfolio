@@ -3,6 +3,7 @@ import React from "react";
 import { FacebookIcon, GithubIcon, LinkedinIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { images } from "../../../public/images";
 
 const Hero = () => {
   return (
@@ -42,12 +43,9 @@ const Hero = () => {
       <div className="order-1 md:order-2">
         <Image
           className="m-auto max-w-full  w-50 md:w-[300px]"
-          placeholder="blur"
-          blurDataURL="./suhag.png"
-          src="/suhag.png"
+          src={images.heroImg}
+          priority
           alt="suhag"
-          width={"300"}
-          height={"300"}
         />
       </div>
     </section>

@@ -1,16 +1,12 @@
 import Link from "next/link";
 import React from "react";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-import { MenuIcon } from "lucide-react";
+import Sidebar from "./Sidebar";
 
-const navMenu = [
+export interface InavMenu {
+  name: string;
+  href: string;
+}
+const navMenu: InavMenu[] = [
   { name: "Home", href: "#" },
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
@@ -29,41 +25,18 @@ const Navbar = () => {
       </div>
       <div className="hidden md:flex gap-8">
         {navMenu.map((item) => (
-          <Link
+          <a
             className="hover:text-primary transition-all duration-300"
             href={item.href}
             key={item.href}
           >
             {item.name}
-          </Link>
+          </a>
         ))}
       </div>
 
       {/* for small screen */}
-      <Sheet>
-        <SheetTrigger className="md:hidden cursor-pointer">
-          <MenuIcon />
-        </SheetTrigger>
-        <SheetContent>
-          <SheetHeader>
-            <SheetTitle>SUHAG</SheetTitle>
-            <SheetDescription className="sr-only">
-              Navigate the sections
-            </SheetDescription>
-          </SheetHeader>
-          <div className="flex flex-col h-full justify-center items-center gap-3  font-semibold">
-            {navMenu.map((item) => (
-              <Link
-                className="hover:text-primary transition-all duration-300"
-                href={item.href}
-                key={item.href}
-              >
-                {item.name}
-              </Link>
-            ))}
-          </div>
-        </SheetContent>
-      </Sheet>
+      <Sidebar navMenu={navMenu} />
     </nav>
   );
 };
