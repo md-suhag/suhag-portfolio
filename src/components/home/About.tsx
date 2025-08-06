@@ -2,6 +2,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@radix-ui/react-tabs";
 import Image from "next/image";
 import React from "react";
 import { images } from "../../../public/images";
+import * as motion from "motion/react-client";
 
 const About = () => {
   return (
@@ -9,14 +10,26 @@ const About = () => {
       <h2 className="text-center font-extrabold text-4xl my-16">About</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3   gap-10 md:gap-4">
-        <div className="mx-auto">
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="mx-auto"
+        >
           <Image
             className="w-50 md:w-[300px]"
             src={images.developer}
             alt="developer"
           />
-        </div>
-        <div className="col-span-2">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="col-span-2"
+        >
           <Tabs defaultValue="overview">
             <TabsList>
               <TabsTrigger
@@ -86,7 +99,7 @@ const About = () => {
               </div>
             </TabsContent>
           </Tabs>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

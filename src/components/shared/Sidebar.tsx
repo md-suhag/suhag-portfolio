@@ -28,7 +28,7 @@ const Sidebar = ({ navMenu }: IPros) => {
         if (element) {
           element.scrollIntoView({ behavior: "smooth" });
         }
-      }, 300);
+      }, 800);
     } else {
       setTimeout(() => {
         router.push(href);
