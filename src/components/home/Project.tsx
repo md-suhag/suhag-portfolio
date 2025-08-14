@@ -3,10 +3,18 @@ import ProjectCard from "../ProjectCard";
 
 const projectDetails = [
   {
+    imageUrl: "/tech-space.jpg",
+    title: "Tech Space",
+    description: "",
+    techStack: ["React.js", "Redux", "Express.js", "MongoDB", "Shadcn"],
+    demoLink: "https://tech-space-client.vercel.app/",
+    codeLink: "https://github.com/md-suhag/tech-space.git",
+  },
+  {
     imageUrl: "/talent-it.jpg",
     title: "Talent It Conrner",
     description: "",
-    techStack: ["React.js", "Tailwind"],
+    techStack: ["React.js", "Express.js", "Mongoose", "Tailwind"],
     demoLink: "https://talentitcorner.vercel.app/",
     codeLink: "",
   },
@@ -14,7 +22,7 @@ const projectDetails = [
     imageUrl: "/mychat.jpg",
     title: "My chat",
     description: "",
-    techStack: ["React.js", "Express.js", "Mongodb", "Socket.io", "Tailwind"],
+    techStack: ["React.js", "Express.js", "MongoDB", "Socket.io", "Tailwind"],
     demoLink: "https://my-chat-mern.vercel.app/",
     codeLink: "https://github.com/md-suhag/my-chat-client",
   },
@@ -22,7 +30,7 @@ const projectDetails = [
     imageUrl: "/story-planet.jpg",
     title: "Story Planet",
     description: "",
-    techStack: ["React.js", "Express.js", "Mongodb", "Tailwind"],
+    techStack: ["React.js", "Express.js", "MongoDB", "Tailwind"],
     demoLink: "https://story-planet.vercel.app/",
     codeLink: "https://github.com/md-suhag/story-planet",
   },
