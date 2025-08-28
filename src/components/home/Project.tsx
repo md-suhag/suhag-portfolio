@@ -3,13 +3,21 @@ import ProjectCard from "../ProjectCard";
 
 const projectDetails = [
   {
-    imageUrl: "/tech-space.jpg",
-    title: "Tech Space",
+    imageUrl: "/parcel-delivery.jpg",
+    title: "Parcel Delivery",
     description: "",
-    techStack: ["React.js", "Redux", "Express.js", "MongoDB", "Shadcn"],
-    demoLink: "https://tech-space-client.vercel.app/",
-    codeLink: "https://github.com/md-suhag/tech-space.git",
+    techStack: [
+      "Typescript",
+      "React.js",
+      "Redux",
+      "Express.js",
+      "MongoDB",
+      "Shadcn",
+    ],
+    demoLink: "https://my-chat-mern.vercel.app/",
+    codeLink: "https://github.com/md-suhag/my-chat-client.git",
   },
+
   {
     imageUrl: "/talent-it.jpg",
     title: "Talent It Conrner",
@@ -19,10 +27,26 @@ const projectDetails = [
     codeLink: "",
   },
   {
+    imageUrl: "/tech-space.jpg",
+    title: "Tech Space",
+    description: "",
+    techStack: ["React.js", "Redux", "Express.js", "MongoDB", "Shadcn"],
+    demoLink: "https://tech-space-client.vercel.app/",
+    codeLink: "https://github.com/md-suhag/tech-space.git",
+  },
+
+  {
     imageUrl: "/mychat.jpg",
     title: "My chat",
     description: "",
-    techStack: ["React.js", "Express.js", "MongoDB", "Socket.io", "Tailwind"],
+    techStack: [
+      "React.js",
+      "Redux",
+      "Express.js",
+      "MongoDB",
+      "Socket.io",
+      "Material UI",
+    ],
     demoLink: "https://my-chat-mern.vercel.app/",
     codeLink: "https://github.com/md-suhag/my-chat-client",
   },

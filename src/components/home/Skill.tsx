@@ -13,6 +13,7 @@ const techStacks = [
   "PostgreSql",
   "Prisma",
   "Shadcn",
+  "Socket.io",
 ];
 const Skill = () => {
   return (
