@@ -34,7 +34,11 @@ const Navbar = () => {
           </a>
         ))}
       </div>
-
+      <div>
+        <a href="/Md Abdus Salam Suhag Resume.pdf" download="" className="btn">
+          Resume
+        </a>
+      </div>
       {/* for small screen */}
       <Sidebar navMenu={navMenu} />
     </nav>

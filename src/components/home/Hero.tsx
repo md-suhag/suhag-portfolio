@@ -1,6 +1,6 @@
 import React from "react";
 
-import { FacebookIcon, GithubIcon, LinkedinIcon } from "lucide-react";
+import { FacebookIcon, GithubIcon, LinkedinIcon, MailIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { images } from "../../../public/images";
@@ -17,20 +17,20 @@ const Hero = () => {
         className="py-4 order-2 md:order-1 col-span-2"
       >
         <span className="italic font-serif text-muted-foreground">
-          {" "}
           Hi I&apos;m
         </span>
-        <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold my-3">
+        <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold my-2">
           Abdus Salam Suhag
         </h1>
-        <h2 className="text-xl sm:text-2xl lg:text-3xl font-normal mb-4  text-primary ">
+        <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-3  text-primary ">
           Full Stack Web Developer
         </h2>
-        <p className="text-muted-foreground md:max-w-[600px]">
-          Professional web developer and designer who provides best quantity
-          service.
+        <p className="text-muted-foreground md:max-w-[600px] text-sm leading-[22px]">
+          Full-Stack Developer specializing in Typescript, React, Redux,
+          Next.js, Express.js, Node.js, MongoDB, PostgreSQL, and real-time apps
+          with Socket.io.
         </p>
-        <Link href="#contact" className="mt-6  btn">
+        <Link href="#contact" className="mt-3  btn">
           Contact Me
         </Link>
         <div className="flex gap-4 mt-3 social-icon">
@@ -41,6 +41,9 @@ const Hero = () => {
           <a target="_blank" href="https://linkedin.com/in/suhag102">
             {" "}
             <LinkedinIcon size={15} />
+          </a>
+          <a href="mailto:abdussalamsuhag104@gmail.com">
+            <MailIcon size={15} />
           </a>
           <a target="_blank" href="https://github.com/md-suhag">
             <GithubIcon size={15} />
