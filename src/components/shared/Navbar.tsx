@@ -9,6 +9,7 @@ export interface InavMenu {
 const navMenu: InavMenu[] = [
   { name: "Home", href: "/" },
   { name: "About", href: "#about" },
+  { name: "Experience", href: "#experience" },
   { name: "Skills", href: "#skills" },
   // { name: "Service", href: "#service" },
   { name: "Project", href: "#project" },
@@ -23,7 +24,7 @@ const Navbar = () => {
           <h2 className=" text-2xl font-black text-primary ">SUHAG</h2>
         </Link>
       </div>
-      <div className="hidden md:flex gap-8">
+      <div className="hidden md:flex gap-7">
         {navMenu.map((item) => (
           <Link
             className="hover:text-primary transition-all duration-300"
@@ -34,7 +35,7 @@ const Navbar = () => {
           </Link>
         ))}
       </div>
-      <div>
+      <div className="hidden md:block">
         <a href="/Md Abdus Salam Suhag Resume.pdf" download="" className="btn">
           Resume
         </a>

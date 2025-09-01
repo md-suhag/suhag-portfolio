@@ -30,9 +30,19 @@ const Hero = () => {
           Next.js, Express.js, Node.js, MongoDB, PostgreSQL, and real-time apps
           with Socket.io.
         </p>
-        <Link href="#contact" className="mt-3  btn">
-          Contact Me
-        </Link>
+        <div className="mt-3 flex flex-wrap gap-2">
+          <Link href="#contact" className="btn">
+            Contact Me
+          </Link>
+          <a
+            href="/Md Abdus Salam Suhag Resume.pdf"
+            download=""
+            className="block md:hidden md:opacity-0 md:pointer-events-none btn"
+          >
+            Resume
+          </a>
+        </div>
+
         <div className="flex gap-4 mt-3 social-icon">
           <a target="_blank" href="https://www.facebook.com/mdas.suhag">
             <FacebookIcon size={15} />
