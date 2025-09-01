@@ -1,6 +1,6 @@
 "use client";
 import { projectDetails } from "@/lib/projectDetails";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 
 const ProjectDetailsPage = () => {
   const params = useParams();
+  const router = useRouter();
   const title = params.title;
 
   const project = projectDetails.find(
@@ -26,6 +27,15 @@ const ProjectDetailsPage = () => {
 
   return (
     <div className="container mx-auto my-12 px-4 max-w-5xl">
+      <div className="mb-6 ">
+        <Button
+          variant="outline"
+          onClick={() => router.back()}
+          className="text-sm btn ml-auto"
+        >
+          ← Back
+        </Button>
+      </div>
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
