@@ -13,10 +13,9 @@ const Project = () => {
             key={i}
             imageUrl={item.imageUrl}
             title={item.title}
-            description={item.description}
             techStack={item.techStack}
             demoLink={item.demoLink}
-            codeLink={item.codeLink}
+            clientCode={item.clientCode}
           />
         ))}
       </div>

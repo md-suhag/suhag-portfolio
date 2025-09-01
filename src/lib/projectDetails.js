@@ -19,17 +19,10 @@ export const projectDetails = [
       "Shadcn",
     ],
     demoLink: "https://parcel-delivery-client-five.vercel.app/",
-    codeLink: "https://github.com/md-suhag/parcel-delivery-client.git",
+    clientCode: "https://github.com/md-suhag/parcel-delivery-client.git",
+    serverCode: "https://github.com/md-suhag/parcel-delivery-server.git",
   },
 
-  {
-    imageUrl: "/talent-it.jpg",
-    title: "Talent It Conrner",
-    description: "",
-    techStack: ["React.js", "Express.js", "Mongoose", "Tailwind"],
-    demoLink: "https://talentitcorner.vercel.app/",
-    codeLink: "",
-  },
   {
     imageUrl: "/tech-space.jpg",
     title: "Tech Space",
@@ -44,7 +37,8 @@ export const projectDetails = [
     ],
     techStack: ["React.js", "Redux", "Express.js", "MongoDB", "Shadcn"],
     demoLink: "https://tech-space-client.vercel.app/",
-    codeLink: "https://github.com/md-suhag/tech-space.git",
+    clientCode: "https://github.com/md-suhag/tech-space.git",
+    serverCode: "https://github.com/md-suhag/tech-space-server.git",
   },
 
   {
@@ -68,14 +62,46 @@ export const projectDetails = [
       "Material UI",
     ],
     demoLink: "https://my-chat-mern.vercel.app/",
-    codeLink: "https://github.com/md-suhag/my-chat-client",
+    clientCode: "https://github.com/md-suhag/my-chat-client",
+    serverCode: "https://github.com/md-suhag/my-chat-server",
+  },
+  {
+    imageUrl: "/talent-it.jpg",
+    title: "Talent It Conrner",
+    description:
+      "A computer training center management system with an engaging website, course analytics, and secure admin control.",
+    details: [
+      "💻 Developed a responsive and visually appealing website with smooth animations to showcase courses and activities.",
+      "📩 Implemented a contact form for user inquiries and communication.",
+      "🛡️ Built a secure admin panel to manage students, courses, and access detailed analytics.",
+      "📊 Provided insights into student enrollment and course performance through dashboards.",
+      "🌐 Optimized for both desktop and mobile for seamless access.",
+    ],
+    techStack: ["React.js", "Express.js", "Mongoose", "Tailwind"],
+    demoLink: "https://talentitcorner.vercel.app/",
+    clientCode: "",
+    serverCode: "",
   },
   {
     imageUrl: "/story-planet.jpg",
     title: "Story Planet",
-    description: "",
+    description:
+      "An interactive story reading platform with branching narratives where users can shape stories through their choices.",
+    details: [
+      "📖 Branching Narrative Stories – readers can make choices that influence the story’s path and ending.",
+      "👤 User Authentication – secure login and registration system.",
+
+      "🧑‍🏫 Reader: Can log in and read all stories.",
+      "✍️ Author: Can write, publish, and manage their own stories, plus view analytics.",
+      "🛡️ Admin: Can manage all stories, users, and platform content.",
+
+      "📊 Analytics Dashboard – insights for authors about story engagement.",
+      "🌙 Dark mode support for an immersive reading experience.",
+    ],
+
     techStack: ["React.js", "Express.js", "MongoDB", "Tailwind"],
     demoLink: "https://story-planet.vercel.app/",
-    codeLink: "https://github.com/md-suhag/story-planet",
+    clientCode: "https://github.com/md-suhag/story-planet",
+    serverCode: "",
   },
 ];

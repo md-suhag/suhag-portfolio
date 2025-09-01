@@ -14,19 +14,18 @@ import Link from "next/link";
 interface ProjectCardProps {
   imageUrl: string;
   title: string;
-  description: string;
+
   techStack: string[];
   demoLink?: string;
-  codeLink?: string;
+  clientCode?: string;
 }
 
 export default function ProjectCard({
   imageUrl,
   title,
-  description,
   techStack,
   demoLink,
-  codeLink,
+  clientCode,
 }: ProjectCardProps) {
   const projectTitle = title.toLowerCase().replace(/\s+/g, "-");
   return (
@@ -64,14 +63,14 @@ export default function ProjectCard({
           </div>
         </CardContent>
 
-        <CardFooter className="flex gap-2 px-4 pb-4">
+        <CardFooter className="flex flex-wrap gap-2 px-4 pb-4">
           {demoLink && (
             <a href={demoLink} target="_blank" rel="noopener noreferrer">
               <Button className="btn">Live</Button>
             </a>
           )}
-          {codeLink && (
-            <a href={codeLink} target="_blank" rel="noopener noreferrer">
+          {clientCode && (
+            <a href={clientCode} target="_blank" rel="noopener noreferrer">
               <Button className="btn ">Github</Button>
             </a>
           )}

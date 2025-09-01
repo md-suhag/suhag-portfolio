@@ -91,16 +91,30 @@ const ProjectDetailsPage = () => {
                   Live
                 </Link>
               </Button>
-              <Button asChild>
-                <Link
-                  href={project.codeLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn"
-                >
-                  Github
-                </Link>
-              </Button>
+              {project.clientCode && (
+                <Button asChild>
+                  <Link
+                    href={project.clientCode}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn"
+                  >
+                    Client
+                  </Link>
+                </Button>
+              )}
+              {project.serverCode && (
+                <Button asChild>
+                  <Link
+                    href={project.serverCode}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn"
+                  >
+                    Server
+                  </Link>
+                </Button>
+              )}
             </div>
           </CardContent>
         </Card>
