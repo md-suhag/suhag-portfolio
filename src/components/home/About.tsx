@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { images } from "../../../public/images";
 import * as motion from "motion/react-client";
+import { Download } from "lucide-react";
 
 const About = () => {
   return (
@@ -73,19 +74,16 @@ const About = () => {
                 guide them in understanding complex concepts and applying them
                 effectively in real-world projects.
               </p>
-              <p className="mt-2">
-                I focus on{" "}
-                <strong>
-                  problem-solving, scalability, and developer-friendly
-                  architecture
-                </strong>
-                . Whether it&apos;s designing authentication systems, optimizing
-                APIs, or integrating real-time communication, I combine{" "}
-                <strong>technical precision with creative thinking</strong> and
-                continuously explore new technologies to stay ahead in the
-                evolving web ecosystem.
-              </p>
-              Name
+              <div className="mt-5 text-white">
+                <a
+                  href="Md Abdus Salam Suhag Resume.pdf"
+                  download=""
+                  className="btn  flex gap-1"
+                  title="Resume Download"
+                >
+                  <Download size={15} className="inline" /> <span>Resume</span>
+                </a>
+              </div>
             </TabsContent>
             <TabsContent value="education">
               <div className="p-2">

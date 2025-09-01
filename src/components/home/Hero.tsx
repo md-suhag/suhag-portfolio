@@ -1,6 +1,12 @@
 import React from "react";
 
-import { FacebookIcon, GithubIcon, LinkedinIcon, MailIcon } from "lucide-react";
+import {
+  EyeIcon,
+  FacebookIcon,
+  GithubIcon,
+  LinkedinIcon,
+  MailIcon,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { images } from "../../../public/images";
@@ -35,11 +41,12 @@ const Hero = () => {
             Contact Me
           </Link>
           <a
-            href="/Md Abdus Salam Suhag Resume.pdf"
-            download=""
-            className="block md:hidden md:opacity-0 md:pointer-events-none btn"
+            href="https://drive.google.com/file/d/12ObLn9YWqmoNm_XAe2fXqqzEj2TWqq_y/view?usp=sharing"
+            target="_blank"
+            className="flex gap-2 md:hidden md:opacity-0 md:pointer-events-none btn"
+            title="Resume Preview"
           >
-            Resume
+            <EyeIcon size={15} className="inline" /> <span>Resume</span>
           </a>
         </div>
 

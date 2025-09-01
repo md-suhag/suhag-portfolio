@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Sidebar from "./Sidebar";
+import { EyeIcon } from "lucide-react";
 
 export interface InavMenu {
   name: string;
@@ -36,8 +37,13 @@ const Navbar = () => {
         ))}
       </div>
       <div className="hidden md:block">
-        <a href="/Md Abdus Salam Suhag Resume.pdf" download="" className="btn">
-          Resume
+        <a
+          href="https://drive.google.com/file/d/12ObLn9YWqmoNm_XAe2fXqqzEj2TWqq_y/view?usp=sharing"
+          target="_blank"
+          className="btn flex gap-2"
+          title="Resume Preview"
+        >
+          <EyeIcon size={15} className="inline" /> <span>Resume</span>
         </a>
       </div>
       {/* for small screen */}

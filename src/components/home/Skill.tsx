@@ -12,7 +12,7 @@ const frontend = [
   { name: "Material UI", icon: "/icons/material-ui.svg" },
   { name: "Tailwind CSS", icon: "/icons/tailwind-css.svg" },
   { name: "Bootstrap", icon: "/icons/bootstrap.svg" },
-  { name: "Frammer Motion", icon: "/icons/motion.png" },
+  { name: "Framer Motion", icon: "/icons/motion.png" },
 ];
 const backend = [
   { name: "Typescript", icon: "/icons/typescript.svg" },
