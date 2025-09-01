@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import * as motion from "motion/react-client";
+import Link from "next/link";
 
 interface ProjectCardProps {
   imageUrl: string;
@@ -27,6 +28,7 @@ export default function ProjectCard({
   demoLink,
   codeLink,
 }: ProjectCardProps) {
+  const projectTitle = title.toLowerCase().replace(/\s+/g, "-");
   return (
     <motion.div
       initial={{ opacity: 0, x: -50 }}
@@ -49,8 +51,7 @@ export default function ProjectCard({
         </CardHeader>
 
         <CardContent className="px-4 flex-1">
-          <h3 className="text-lg font-semibold">{title}</h3>
-          <p className="text-sm text-muted-foreground mt-2">{description}</p>
+          <h3 className="text-lg font-semibold mb-2">{title}</h3>
           <div className="flex flex-wrap">
             {techStack.map((item, i) => (
               <span
@@ -63,7 +64,7 @@ export default function ProjectCard({
           </div>
         </CardContent>
 
-        <CardFooter className="flex justify-between px-4 pb-4">
+        <CardFooter className="flex gap-2 px-4 pb-4">
           {demoLink && (
             <a href={demoLink} target="_blank" rel="noopener noreferrer">
               <Button className="btn">Live</Button>
@@ -74,6 +75,9 @@ export default function ProjectCard({
               <Button className="btn ">Github</Button>
             </a>
           )}
+          <Link href={`/projects/${projectTitle}`}>
+            <Button className="btn">Details</Button>
+          </Link>
         </CardFooter>
       </Card>
     </motion.div>

@@ -7,7 +7,7 @@ export interface InavMenu {
   href: string;
 }
 const navMenu: InavMenu[] = [
-  { name: "Home", href: "#" },
+  { name: "Home", href: "/" },
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
   // { name: "Service", href: "#service" },
@@ -17,7 +17,7 @@ const navMenu: InavMenu[] = [
 
 const Navbar = () => {
   return (
-    <nav className=" flex justify-between items-center  p-2 py-5">
+    <nav className=" flex justify-between items-center  p-2 py-5 container px-4 mx-auto ">
       <div>
         <Link href="/">
           <h2 className=" text-2xl font-black text-primary ">SUHAG</h2>
@@ -25,13 +25,13 @@ const Navbar = () => {
       </div>
       <div className="hidden md:flex gap-8">
         {navMenu.map((item) => (
-          <a
+          <Link
             className="hover:text-primary transition-all duration-300"
             href={item.href}
             key={item.href}
           >
             {item.name}
-          </a>
+          </Link>
         ))}
       </div>
       <div>

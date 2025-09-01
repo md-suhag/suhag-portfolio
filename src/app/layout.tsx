@@ -6,6 +6,8 @@ import ScrollTop from "@/components/ScrollTop";
 import { GA_MEASUREMENT_ID } from "@/lib/gtag";
 import Script from "next/script";
 import Analytics from "@/components/Analytics";
+import Navbar from "@/components/shared/Navbar";
+import Footer from "@/components/shared/Footer";
 
 const comfortaa = Comfortaa({
   variable: "--font-comfortaa",
@@ -56,7 +58,12 @@ export default function RootLayout({
             `,
           }}
         />
-        {children}
+        <header>
+          <Navbar />
+        </header>
+        <main>{children}</main>
+
+        <Footer />
         <Toaster />
         <ScrollTop />
       </body>

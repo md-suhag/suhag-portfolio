@@ -4,6 +4,7 @@ import Image from "next/image";
 
 const frontend = [
   { name: "Javascript", icon: "/icons/javascript.svg" },
+  { name: "Typescript", icon: "/icons/typescript.svg" },
   { name: "React.js", icon: "/icons/react.png" },
   { name: "Next.js", icon: "/icons/next.js.svg" },
   { name: "Redux", icon: "/icons/redux.svg" },
@@ -14,7 +15,6 @@ const frontend = [
   { name: "Frammer Motion", icon: "/icons/motion.png" },
 ];
 const backend = [
-  { name: "Javascript", icon: "/icons/javascript.svg" },
   { name: "Typescript", icon: "/icons/typescript.svg" },
   { name: "Node.js", icon: "/icons/node-js.svg" },
   { name: "Express.js", icon: "/icons/express-js.svg" },

@@ -4,8 +4,6 @@ import Hero from "@/components/home/Hero";
 import Project from "@/components/home/Project";
 import Skill from "@/components/home/Skill";
 import { Particles } from "@/components/magicui/particles";
-import Footer from "@/components/shared/Footer";
-import Navbar from "@/components/shared/Navbar";
 
 export default function Home() {
   return (
@@ -16,17 +14,12 @@ export default function Home() {
         ease={80}
         refresh
       />
-      <header>
-        <Navbar />
-      </header>
-      <main>
-        <Hero />
-        <About />
-        <Skill />
-        <Project />
-        <Contact />
-      </main>
-      <Footer />
+
+      <Hero />
+      <About />
+      <Skill />
+      <Project />
+      <Contact />
     </div>
   );
 }
