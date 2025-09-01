@@ -47,27 +47,56 @@ const About = () => {
             </TabsList>
             <TabsContent
               value="overview"
-              className="text-muted-foreground text-base"
+              className="text-muted-foreground text-base p-2"
             >
               <p>
-                {" "}
-                I&apos;m a passionate MERN Stack Developer with a strong focus
-                on building scalable, high-performance web applications. I
-                specialize in creating clean, responsive user interfaces with
-                React, and robust, secure backends with Node.js, Express, and
-                MongoDB. My development approach combines best practices, modern
-                tools, and attention to detail—whether I&apos;m working on
-                authentication systems, REST APIs, or full-stack applications.{" "}
+                I&apos;m a Full Stack Developer passionate about building{" "}
+                <strong>scalable, real-world web applications</strong>. My core
+                stack includes{" "}
+                <strong>
+                  React.js, Next.js, Node.js, Express.js, and MongoDB
+                </strong>
+                , with experience in <strong>PostgreSQL and Socket.io</strong>{" "}
+                for real-time features. I have hands-on experience delivering
+                full-stack solutions focused on{" "}
+                <strong>
+                  clean architecture, high performance, and practical
+                  problem-solving
+                </strong>
+                .
               </p>
               <p className="mt-2">
-                {" "}
-                I enjoy solving complex problems, optimizing user experience,
-                and continuously learning new technologies to stay ahead in the
-                fast-paced web world.
+                In addition to development, I&apos;ve worked as a{" "}
+                <strong>Web Development Mentor</strong>, mentoring students in{" "}
+                <strong>JavaScript, HTML, CSS, Bootstrap, Git, GitHub</strong>,
+                and backend development using <strong>MySQL and PHP</strong>. I
+                guide them in understanding complex concepts and applying them
+                effectively in real-world projects.
               </p>
+              <p className="mt-2">
+                I focus on{" "}
+                <strong>
+                  problem-solving, scalability, and developer-friendly
+                  architecture
+                </strong>
+                . Whether it&apos;s designing authentication systems, optimizing
+                APIs, or integrating real-time communication, I combine{" "}
+                <strong>technical precision with creative thinking</strong> and
+                continuously explore new technologies to stay ahead in the
+                evolving web ecosystem.
+              </p>
+              Name
             </TabsContent>
             <TabsContent value="education">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+              <div className="p-2">
+                <p className="text-muted-foreground">
+                  Completed coursework in computer technology, covering
+                  programming, software development, database management,
+                  networking, and system design. Developed strong
+                  problem-solving and technical skills through both theoretical
+                  and practical projects, preparing for real-world applications
+                  in modern computing and engineering fields.
+                </p>
                 <div className="my-5 text-sm sm:text-base">
                   <h4 className="text-lg mb-2">Diploma in Engineering</h4>
                   <p className="text-muted-foreground">
@@ -79,21 +108,6 @@ const About = () => {
 
                   <p className="text-muted-foreground">
                     Cgpa : 3.90 out of 4.00
-                  </p>
-                </div>
-                <div className="my-5  text-sm sm:text-base">
-                  <h4 className="text-lg mb-2">
-                    Secondary School Cirtificate (SSC)
-                  </h4>
-                  <p className="text-muted-foreground">
-                    Shaistaganj High School
-                  </p>
-                  <p className="text-muted-foreground">
-                    Science - <span>( 2018-2019 )</span>
-                  </p>
-
-                  <p className="text-muted-foreground">
-                    Gpa : 4.78 out of 5.00
                   </p>
                 </div>
               </div>

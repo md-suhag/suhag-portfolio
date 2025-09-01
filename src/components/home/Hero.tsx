@@ -25,7 +25,7 @@ const Hero = () => {
         <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-3  text-primary ">
           Full Stack Web Developer
         </h2>
-        <p className="text-muted-foreground md:max-w-[600px] text-sm leading-[22px]">
+        <p className="text-muted-foreground md:max-w-[600px]  leading-[22px]">
           Full-Stack Developer specializing in Typescript, React, Redux,
           Next.js, Express.js, Node.js, MongoDB, PostgreSQL, and real-time apps
           with Socket.io.
