@@ -2,6 +2,7 @@ import About from "@/components/home/About";
 import Contact from "@/components/home/Contact";
 import Hero from "@/components/home/Hero";
 import Project from "@/components/home/Project";
+import Blog from "@/components/home/Blog";
 import Skill from "@/components/home/Skill";
 import { Particles } from "@/components/magicui/particles";
 
@@ -19,6 +20,7 @@ export default function Home() {
       <About />
       <Skill />
       <Project />
+      <Blog />
       <Contact />
     </div>
   );
