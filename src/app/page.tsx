@@ -5,6 +5,7 @@ import Project from "@/components/home/Project";
 import Blog from "@/components/home/Blog";
 import Skill from "@/components/home/Skill";
 import { Particles } from "@/components/magicui/particles";
+import Experience from "@/components/home/Experience";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
 
       <Hero />
       <About />
+      <Experience />
       <Skill />
       <Project />
       <Blog />
