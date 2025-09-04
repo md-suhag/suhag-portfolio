@@ -18,11 +18,16 @@ const Contact = () => {
         >
           <div className="p-4  py-6 my-6  rounded-lg bg-primary/10">
             <h4 className="">Phone</h4>
-            <a href="tel:01766758317">01766758317</a>
+            <a className="text-sm" href="tel:01766758317">
+              01766758317
+            </a>
           </div>
-          <div className="p-4 py-6  my-6  rounded-lg bg-primary/10">
+          <div className="p-4 py-6  my-6  rounded-lg bg-primary/10 overflow-clip">
             <h4>Email</h4>
-            <a href="mailto:abdussalamsuhag104@gmail.com">
+            <a
+              className="text-[12px] sm:text-sm"
+              href="mailto:abdussalamsuhag104@gmail.com"
+            >
               abdussalamsuhag104@gmail.com
             </a>
           </div>
